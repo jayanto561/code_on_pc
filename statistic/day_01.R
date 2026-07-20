@@ -117,5 +117,110 @@ if (marks >= 80) {
 
 
                               #loop
+for(x in 1:10){
+  print(x)
+}
 
-#function
+
+fruits <- list("apple", "banana", "cherry")
+
+for (x in fruits) {
+  print(x)
+}
+
+dice <- c(1, 2, 3, 4, 5, 6)
+
+for (x in dice) {
+  print(x)
+}
+
+
+fruits <- list("apple", "banana", "cherry")
+
+for (x in fruits) {
+  if (x == "cherry") {
+    break
+  }
+  print(x)
+}
+
+
+fruits <- list("apple", "banana", "cherry")
+
+for (x in fruits) {
+  if (x == "banana") {
+    next
+  }
+  print(x)
+}
+
+dice <- 1:6
+
+for(x in dice) {
+  if (x == 6) {
+    print(paste("The dice number is", x, "Yahtzee!"))
+  } else {
+    print(paste("The dice number is", x, "Not Yahtzee"))
+  }
+}
+
+
+i <- 1
+while (i < 6) {
+  print(i)
+  i <- i + 1
+}
+
+i <- 0
+while (i < 6) {
+  i <- i + 1
+  if (i == 3) {
+    next
+  }
+  print(i)
+}
+
+
+i <- 1
+while (i < 6) {
+  print(i)
+  i <- i + 1
+  if (i == 4) {
+    break
+  }
+}
+
+adj <- list("red", "big", "tasty")
+
+fruits <- list("apple", "banana", "cherry")
+  for (x in adj) {
+    for (y in fruits) {
+      print(paste(x, y))
+  }
+}
+                          #function
+myfunction <-function(){
+  print("Function ")
+  cat("function")
+}
+
+myfunction()
+
+
+my_function <- function(fname) {
+  paste(fname, "Griffin")
+}
+
+my_function("Peter")
+my_function("Lois")
+my_function("Stewie")
+
+
+
+my_function <- function(x) {
+  return (5 * x)
+}
+
+print(my_function(3))
+print(my_function(5))
+print(my_function(9))
